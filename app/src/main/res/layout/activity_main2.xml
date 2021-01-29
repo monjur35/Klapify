@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginHorizontal="2dp"
+       android:layout_alignParentBottom="true">
+
+       <Button
+           android:id="@+id/viewID"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:backgroundTint="@color/btnbg"
+           android:elevation="5dp"
+           android:gravity="center"
+           android:padding="10dp"
+           android:text="View"
+           android:background="@drawable/shapebtn1"
+           android:textColor="@drawable/textcolor"
+           android:textSize="25sp" />
+
+       <Button
+           android:elevation="5dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Buy"
+           android:textColor="@drawable/textcolor"
+           android:textSize="25sp"
+           android:background="@drawable/shapebtn"
+           android:padding="10dp"
+           android:backgroundTint="@color/btnbg"
+           android:id="@+id/buyID"/>
+
+
+   </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/imageId"
+        android:background="#E4E4E4"
+        android:foregroundGravity="center"
+        android:src="@drawable/unnamed"/>
+    <LinearLayout
+        android:layout_below="@+id/imageId"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ferrari Team"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Price"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000000 Hives"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0BCA14"
+                    android:gravity=""/>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lease period"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight=".25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 7 Days "
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_roundbg"
+                android:backgroundTint="@color/btnbg"/>
+            <TextView
+                android:layout_weight=".25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 15 Days "
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_roundbg"
+                android:backgroundTint="@color/btnbg"/>
+            <TextView
+                android:layout_weight=".25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 30 Days "
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_roundbg"
+                android:backgroundTint="@color/btnbg"/>
+            <TextView
+                android:layout_weight=".25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 90 Days "
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_roundbg"
+                android:backgroundTint="@color/btnbg"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
